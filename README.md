@@ -4,14 +4,19 @@ A very simple console application that simulates a pool cleaning robot's movemen
 
 ## Usage
 Clone the repository:
+
 `$ git clone https://github.com/macksterino/poolcleaner.git && cd poolcleaner`
+
 Or download the ZIP-package.
 
-Requirements:
+**Requirements:**
 - Node.js
 
 Thereafter:
+
+
 `$ npm install`
+
 
 And finally to start the application, do:
 
