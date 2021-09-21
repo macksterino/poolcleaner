@@ -83,7 +83,6 @@ const prompts = rl.createInterface({ input: process.stdin, output: process.stdou
 	}
 	catch (error) {
 		console.log('Error: '.concat(error as string));
-		process.exit();
 	}
 	finally {
 		process.exit();
