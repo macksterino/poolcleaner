@@ -1,4 +1,4 @@
-export type Direction = 'N' | 'E' | 'S' | 'W';
+type Direction = 'N' | 'E' | 'S' | 'W';
 type Command = 'A' | 'L' | 'R';
 
 export type Specification = {

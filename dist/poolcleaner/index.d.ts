@@ -1,4 +1,4 @@
-export declare type Direction = 'N' | 'E' | 'S' | 'W';
+declare type Direction = 'N' | 'E' | 'S' | 'W';
 declare type Command = 'A' | 'L' | 'R';
 export declare type Specification = {
     pool: {
