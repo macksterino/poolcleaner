@@ -11,14 +11,14 @@ class PoolCleaner {
             this.handleDirection(command);
         }
         const { direction, x, y } = this.specification.initial;
+        this.result = direction.concat(' ', x.toString(), ' ', y.toString());
+    }
+    handleDirection(command) {
+        const { direction, x, y } = this.specification.initial;
         const { lengthX, lengthY } = this.specification.pool;
         if ((x > lengthX) || (x < 0) || (y > lengthY) || (y < 0)) {
             throw 'Neither X or Y cannot exceed the lX and lY of the pool. Please reconstruct your commands.';
         }
-        this.result = direction.concat(' ', x.toString(), ' ', y.toString());
-    }
-    handleDirection(command) {
-        const { direction } = this.specification.initial;
         switch (command) {
             case 'A':
                 switch (direction) {

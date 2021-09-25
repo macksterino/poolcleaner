@@ -29,17 +29,16 @@ export class PoolCleaner {
 		}
 
 		const { direction, x, y } = this.specification.initial;
+		this.result = direction.concat(' ', x.toString(), ' ', y.toString());
+	}
+
+	private handleDirection(command: Command): void {
+		const { direction, x, y } = this.specification.initial;
 		const { lengthX, lengthY } = this.specification.pool;
 
 		if ((x > lengthX) || (x < 0) || (y > lengthY) || (y < 0)) {
 			throw 'Neither X or Y cannot exceed the lX and lY of the pool. Please reconstruct your commands.'
 		}
-
-		this.result = direction.concat(' ', x.toString(), ' ', y.toString());
-	}
-
-	private handleDirection(command: Command): void {
-		const { direction } = this.specification.initial;
 
 		switch (command) {
 			case 'A':
