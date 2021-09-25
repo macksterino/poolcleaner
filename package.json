@@ -1,6 +1,6 @@
 {
 	"name": "@macksterino/poolcleaner",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Fteen 1000 Pool Cleaner",
 	"main": "./dist/index.js",
 	"scripts": {
